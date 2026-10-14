@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ with .Content }}<section class="intro">{{ . }}</section>{{ end }}
+
+  <h2><a href="{{ "/posts/" | relURL }}">Posts</a></h2>
+  {{ partial "listing.html" (dict "pages" (first 8 (where site.RegularPages "Section" "posts"))) }}
+  <p class="more"><a href="{{ "/posts/" | relURL }}">All posts &rarr;</a></p>
+
+  <h2><a href="{{ "/notes/" | relURL }}">Notes</a></h2>
+  {{ partial "listing.html" (dict "pages" (first 8 (where site.RegularPages "Section" "notes"))) }}
+  <p class="more"><a href="{{ "/notes/" | relURL }}">All notes &rarr;</a></p>
+{{ end }}

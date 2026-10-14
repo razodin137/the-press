@@ -1,0 +1,6 @@
+name = "press"
+license = "MIT"
+description = "A hand-rolled, vendored, frozen theme. Owns every line it runs."
+min_version = "0.116.0"
+[author]
+  name = "you"

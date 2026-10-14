@@ -1,0 +1,96 @@
+/* THE PRESS - the entire stylesheet. Frozen. Read it, own it. */
+
+:root {
+  --bg: #fbfaf6;
+  --fg: #1f1d1a;
+  --muted: #75706a;
+  --accent: #7a2e2e;
+  --rule: #e4e0d8;
+  --code-bg: #f0ede6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #191816;
+    --fg: #e8e4dd;
+    --muted: #98918a;
+    --accent: #e09a8c;
+    --rule: #3a3631;
+    --code-bg: #242220;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, serif;
+  font-size: 1.075rem;
+  line-height: 1.68;
+  margin: 0;
+}
+
+.wrap { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* header */
+.site-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1.1rem; margin-bottom: 2.75rem;
+}
+.site-title { font-weight: 400; font-size: 1.3rem; color: var(--fg); }
+.site-header nav a { margin-left: 1.1rem; color: var(--muted); font-size: 0.95rem; }
+.site-header nav a:hover { color: var(--accent); }
+
+/* type */
+h1, h2, h3 { line-height: 1.3; font-weight: 600; }
+h1 { font-size: 1.75rem; margin: 2.2rem 0 0.4rem; }
+h2 { font-size: 1.3rem; margin: 2.6rem 0 0.8rem; }
+h3 { font-size: 1.1rem; margin: 2rem 0 0.6rem; }
+p { margin: 0 0 1.15rem; }
+
+/* listings */
+.listing { list-style: none; margin: 0 0 1rem; padding: 0; }
+.listing li {
+  display: flex; gap: 1.1rem; align-items: baseline;
+  padding: 0.28rem 0; border-bottom: 1px dotted var(--rule);
+}
+.listing time {
+  flex: 0 0 6.4rem; color: var(--muted); font-size: 0.86rem;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.listing .empty { color: var(--muted); border-bottom: none; }
+.year { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.more { font-size: 0.95rem; }
+
+/* meta + tags */
+.meta, .tags { color: var(--muted); font-size: 0.88rem; }
+.tags { border-top: 1px dotted var(--rule); padding-top: 1rem; margin-top: 2.5rem; }
+
+/* article furniture */
+blockquote {
+  margin: 1.4rem 0; padding: 0.1rem 0 0.1rem 1.2rem;
+  border-left: 3px solid var(--rule); color: var(--muted);
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em; background: var(--code-bg);
+  padding: 0.12em 0.35em; border-radius: 4px;
+}
+pre { background: var(--code-bg); padding: 1rem 1.2rem; border-radius: 6px; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+img { max-width: 100%; height: auto; }
+hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+.intro, .section-intro { color: var(--muted); }
+.terms { list-style: none; padding: 0; }
+.terms li { padding: 0.2rem 0; }
+.terms .count { color: var(--muted); font-size: 0.85rem; }
+
+/* footer */
+.site-footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.82rem; }
+.site-footer hr { margin: 0 0 1rem; }

@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    {{ if not .Date.IsZero }}<p class="meta">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
+    {{ .Content }}
+    {{ with .Params.tags }}
+      <p class="tags">filed under:
+        {{ range $i, $tag := . }}{{ if $i }}, {{ end }}<a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}/">{{ $tag }}</a>{{ end }}
+      </p>
+    {{ end }}
+  </article>
+{{ end }}

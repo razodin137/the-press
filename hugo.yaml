@@ -1,0 +1,25 @@
+# -------------------------------------------------------------------
+# THE PRESS - frozen configuration
+# Hugo 0.165.0+extended. Local binary and CI workflow pinned to match.
+# Do not upgrade Hugo. Do not add plugins. Write words instead.
+# -------------------------------------------------------------------
+baseURL: https://example.com/      # checklist item 3 in README
+title: The Press                   # checklist item 3 in README
+locale: en
+timeZone: Asia/Bangkok
+theme: press
+
+params:
+  author: razodin137               # checklist item 3 in README
+  description: Notes and essays, printed from a deliberately frozen press.
+
+menus:
+  main:
+    - { name: posts, pageRef: /posts, weight: 10 }
+    - { name: notes, pageRef: /notes, weight: 20 }
+    - { name: about, pageRef: /about, weight: 30 }
+    - { name: rss, url: /index.xml, weight: 40 }
+
+taxonomies:
+  tag: tags           # many labels per piece; the reader-facing map
+  category: categories # optional: use sparingly for broad series
