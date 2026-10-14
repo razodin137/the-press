@@ -1,0 +1,10 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="640" fill="#1f1d1a"/>
+  <rect x="96" y="212" width="196" height="196" rx="30" fill="#fbfaf6"/>
+  <text x="194" y="356" font-family="Georgia, 'DejaVu Serif', serif" font-size="120" fill="#1f1d1a" text-anchor="middle">P</text>
+  <text x="352" y="330" font-family="Georgia, 'DejaVu Serif', serif" font-size="96" fill="#fbfaf6">The Press</text>
+  <rect x="356" y="362" width="560" height="3" fill="#7a2e2e"/>
+  <text x="356" y="424" font-family="Georgia, 'DejaVu Serif', serif" font-size="37" fill="#b9b3aa">A Hugo site, frozen on purpose.</text>
+  <text x="356" y="472" font-family="Georgia, 'DejaVu Serif', serif" font-size="37" font-style="italic" fill="#8d877e">Words in a repo. git push publishes.</text>
+  <text x="96" y="576" font-family="Georgia, 'DejaVu Serif', serif" font-size="27" fill="#6f6a62">razodin137/the-press  ·  Hugo 0.165.0  ·  frozen until 2027-04-14</text>
+</svg>

@@ -1,5 +1,8 @@
 # The Press
 
+[![Deploy](https://github.com/razodin137/the-press/actions/workflows/deploy.yml/badge.svg)](https://github.com/razodin137/the-press/actions/workflows/deploy.yml)
+[![Hugo](https://img.shields.io/badge/Hugo-0.165.0%20·%20frozen-1f1d1a?logo=hugo&logoColor=white)](https://gohugo.io)
+
 A Hugo site that is finished. Not "good enough for now" -- finished.
 One week ago you picked Hugo for the last time; this repo is what that
 decision looks like as files.
